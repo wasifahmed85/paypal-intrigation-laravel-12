@@ -66,8 +66,13 @@ PAYPAL_SECRET=your-secret
 PAYPAL_MODE=sandbox
 ```
 ### 5. Create the Controller
-In your controller, create methods to handle PayPal payments. Here's an example of the controller (ProductController.php):
+In your controller, create methods to handle PayPal payments. Here's an example of the controller :
+
+
+```bash
+php artisan make:controller ProductController
+```
 
 ### 6. Define Routes
-In the routes/web.php file, define the routes for the payment process:
+In the (routes/web.php) file, define the routes for the payment process:
 
