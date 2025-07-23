@@ -21,4 +21,46 @@ Follow these steps to set up PayPal payment integration in your Laravel applicat
 Run the following command to install the PayPal package via Composer:
 
 ```bash
+Copy
 composer require srmklive/paypal
+```
+### 2. Publish the Configuration File
+Once the package is installed, publish the configuration file to your Laravel app:
+
+```bash
+Copy
+php artisan vendor:publish --provider "Srmklive\PayPal\Providers\PayPalServiceProvider"
+```
+### 3. Configure PayPal API Credentials
+In the config/paypal.php file, add your PayPal API credentials. These credentials can be obtained by creating a PayPal Developer account and setting up a sandbox account.
+
+```bash
+Copy
+return [
+    'client_id' => env('PAYPAL_CLIENT_ID'),
+    'secret' => env('PAYPAL_SECRET'),
+    'settings' => [
+        'mode' => env('PAYPAL_MODE', 'sandbox'), // 'sandbox' or 'live'
+        'http.ConnectionTimeOut' => 30,
+        'log.LogEnabled' => true,
+        'log.FileName' => storage_path('logs/paypal.log'),
+        'log.LogLevel' => 'INFO',
+    ],
+];
+```
+
+### 4. Add Environment Variables
+Add the PayPal credentials to your .env file:
+
+```bash
+Copy
+PAYPAL_CLIENT_ID=your-client-id
+PAYPAL_SECRET=your-secret
+PAYPAL_MODE=sandbox
+```
+### 5. Create the Controller
+In your controller, create methods to handle PayPal payments. Here's an example of the controller (ProductController.php):
+
+### 6. Define Routes
+In the routes/web.php file, define the routes for the payment process:
+
