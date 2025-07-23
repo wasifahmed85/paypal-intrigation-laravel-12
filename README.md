@@ -9,14 +9,15 @@ This repository demonstrates how to integrate PayPal payment functionality into 
 The documentation for the package can be viewed by clicking the following link:[srmklive/paypal package](https://srmklive.github.io/laravel-paypal/docs.html).
 ## Requirements
 
-Important
+> **Important**
+>
+> Laravel 11 will be the last version supported for v3.0. v4 is being actively worked on, and will be released by end of October 2024. For v4, the following changes are being introduced:
+>
+> - PHP 8.1+ required.
+> - Laravel 10 & onwards required.
+> - Integration of PayPal JS SDK.
+> - Symfony plugin.
 
-Laravel 11 will be the last version supported for v3.0. v4 is being actively worked on, and will be released by end of October 2024. For v4, following are the changes being introduced:
-
-PHP 8.1+ required.
-Laravel 10 & onwards required.
-Integration of PayPal JS SDK.
-Symfony plugin.
 
 ## Installation
 
