@@ -4,8 +4,9 @@
 # Laravel PayPal Payment Integration
 
 This repository demonstrates how to integrate PayPal payment functionality into a Laravel application using the [srmklive/paypal package/github](https://github.com/srmklive/laravel-paypal).
-The documentation for the package can be viewed by clicking the following link:[srmklive/paypal package](https://srmklive.github.io/laravel-paypal/docs.html).
 
+
+The documentation for the package can be viewed by clicking the following link:[srmklive/paypal package](https://srmklive.github.io/laravel-paypal/docs.html).
 ## Requirements
 
 - Laravel 8.x or higher
