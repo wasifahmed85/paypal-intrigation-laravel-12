@@ -75,7 +75,7 @@ In your controller, create methods to handle PayPal payments. Here's an example 
 
 
 ```bash
-php artisan make:controller ProductController
+php artisan make:controller PaypalController
 ```
 
 ### 6. Define Routes
