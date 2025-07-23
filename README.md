@@ -29,7 +29,7 @@ composer require srmklive/paypal
 Once the package is installed, publish the configuration file to your Laravel app:
 
 ```bash
-Copy
+
 php artisan vendor:publish --provider "Srmklive\PayPal\Providers\PayPalServiceProvider"
 ```
 ### 3. Configure PayPal API Credentials
